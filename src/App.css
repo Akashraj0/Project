@@ -1,31 +1,211 @@
-.App {
+*{
+  margin: 0rem;
+  padding: 0rem;
+}
+body{
+  background-color: #EDEFEE;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 3rem 0rem 0rem 2rem;
+}
+.btn{
+   background-color:#F4CE14;
+   color:#495E57;
+   font-weight: bold;
+   padding: 0.3rem;
+   border-radius: 16px;
+   margin: 0rem 0.4rem;
+   max-width: 8rem;
+}
+.special-btn{
+   background-color:#F4CE14;
+   color:#495E57;
+   font-weight: bold;
+   padding: 0.3rem;
+   border-radius: 16px;
+   margin: auto;
+   max-width: 22%;
+}
+.hero{
+  background-color: #495E57;
+  height: 14rem;
+  margin: 3rem 0rem;
+}
+.about{
+  background-color: #495E57;
+  height: 15rem;
+  margin: 3rem 0rem;
+}
+.grid1{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin:2rem 2rem;
+  grid-gap: 1rem;
+
+}
+.hero img{
+  width: 13rem;
+  margin: 3rem auto;
+  display: block;
+  border-radius: 16px;
+}
+.about img{
+  width: 13rem;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 16px;
+}
+.cardgrid{
+  margin: 1rem 0rem 3rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:1rem;
+}
+.card {
+  border-radius: 16px;
+}
+.card img{
+  width: 5rem;
+  display: block;
+  margin:0.5rem;
+  height: 4rem;
+  border-radius: 16px;
+}
+.test,.special {
+  max-width: 91%;
+  margin:5rem auto;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin:2rem 0rem;
+  grid-gap:0.7rem;
+}
+.grid2 img{
+  width: 3rem;
+  margin: auto;
+  display: block;
+}
+.grid2 h4{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rating{
+  width:5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section  > h1{
+  text-align: center;
+  margin: 3rem auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.grid > h3{
+  text-align: left;
+}
+h1{
+  margin: 0.8rem 0rem;
+}
+h4{
+  margin: 0.8rem 0.5rem;
+}
+h2{
   color: white;
 }
+h3{
+  text-align: center;
+}
+h5{
+  margin: 0.8rem 0rem;
+}
+h6{
+  margin: 0.8rem 0rem;
+}
+.grid1 p{
+  margin: 0.8rem 0.5rem;
+  color: white;
+}
+p{
+  margin: 0.8rem 0.5rem;
+}
+.form{
+  background-color: #495E57;
+}
+.form-head{
+  text-align: center;
+  margin:2rem 0rem
+}
 
-.App-link {
-  color: #61dafb;
+.double-image {
+  max-height: 18rem;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
+}
+
+.double-image > img {
+  width: 74%;
+  height: 41%;
+  object-fit: contain;
+}
+
+.about-1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.about-2 {
+  position: absolute;
+  top: -3.5rem;
+  left: 5rem;
+  border-radius: 2px;
+}
+.form-input{
+margin: 1rem;
+color: #F4CE14;
+font-weight: bold;
+border-radius: 0.5rem;
+padding: 0.5rem;
+}
+label{
+font-weight: bold;
+}
+.btn-form{
+background-color: #F4CE14;
+color:#495E57;
+padding: 0.5rem;
+border-radius: 0.5rem;
+margin: 0rem 0rem 1rem 0rem;
+}
+.form p{
+  font-weight: bold;
+}
+@media only screen and (max-width:1060px){
+  html{
+      scroll-behavior: smooth;
+  }
+  .hero{
+      background-color:#495E57;
+      height: 16rem;
+  }
+  .about{
+    background-color:#495E57;
+    height: 20rem;
+}
+  .special {
+    max-width: 91%;
+    margin: 1rem auto;
+  }
+  .special-btn {
+    max-width: 90%;
+}
+  p{
+      font-size: 0.7rem;
+  }
+  .double-image > img {
+    width: 49%;
+    height: 29%;
+    object-fit: cover;
+}
 }
 
 @keyframes App-logo-spin {
